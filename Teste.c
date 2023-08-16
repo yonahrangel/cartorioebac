@@ -129,6 +129,8 @@ int main()
 	printf("\t1 - Registrar nomes\n");
 	printf("\t2 - Consultar nomes\n");
 	printf("\t3 - Deletar nomes\n");  //É o fim do menu
+	printf("\t4 - Sair do distema\n");
+	
 	printf("Opcao: ");
 	
 	scanf("%d", &opcao); //Armazenando a escolha do usuário
@@ -150,6 +152,11 @@ int main()
 		deletar(); //chamada de funções
 		system("pause");
 		break; //encerramento
+		
+		case 4:
+		printf("Obrigado por utilizar o nosso sistema!\n");
+		return 0;
+		break;
 		
 		default: //quando é selecionada uma opção fora do mapeamento/fora do padrão
 		printf("Essa opção não está disponivel! \n");  //Aqui é o fim da seleção
